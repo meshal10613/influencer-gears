@@ -24,6 +24,10 @@ header{
 .head-links ul li{
     list-style: none;
     font-weight: 600;
+    transition: transform 0.5s;
+}
+.head-links ul li:hover{
+    transform: scale(1.2);
 }
 .head-links ul li a{
     text-decoration: none;
@@ -97,7 +101,7 @@ header{
 
 /* collection section  */
 .collection{
-    margin: 100px 160px;
+    margin: 50px 160px;
 }
 .collection-title{
     text-align: center;
@@ -120,6 +124,24 @@ header{
     padding: 15px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
+}
+
+/* extra button  */
+.div-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 160px;
+    margin-bottom: 50px;
+}
+.div-btn .btn{
+    border: none;
+    color: rgba(224, 44, 109, 0.87);
+    background-color: white;
+    cursor: pointer;
+    transition: transform 1s;
+}
+.div-btn .btn:hover{
+    transform: scale(1.5) translateX(-10px);
 }
 
 /* for mobile device  */
@@ -155,5 +177,8 @@ header{
     }
     .collection-cards{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .div-btn .btn{
+        margin-top: 20px;
     }
 }
