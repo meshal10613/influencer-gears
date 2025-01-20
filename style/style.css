@@ -89,7 +89,6 @@ header{
     position: absolute;
     right: 200px;
     z-index: 1;
-    width: 100%;
 }
 .start svg{
     width: 100%;
